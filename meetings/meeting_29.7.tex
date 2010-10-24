@@ -1,0 +1,144 @@
+%%%
+%%% File: protokoll_29.7.tex
+%%% Author: Dominic Stuehler <dominic.stuehler@gmx.net>
+%%% Created: So 10.Okt 19:54:38 CEST 2010
+%%% Copyright: Dominic Stuehler, 2010
+%%%
+%%% Description: Simple template in latex for protocols.
+%%%
+%%% NOTE: This document may be changed/modified and (re)distributed.
+%%%	  If you do so, please name always the author of the first
+%%%	  version of this document.
+%%%
+
+\documentclass[%
+fontsize=12pt,
+paper=a4,
+DIV=calc,
+%twoside,
+%titlepage,
+%headings=normal,
+]{scrartcl}
+
+%%% Usepackages
+%%% German language support
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage[babel,german=guillemets]{csquotes}
+
+%%% Fonts & Symbols
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage[scaled=0.95]{helvet}
+\linespread{1.05}
+\KOMAoptions{DIV=last}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\DeclareUnicodeCharacter{20AC}{\EUR}
+\usepackage{blindtext}
+
+%%% Tables & Graphics
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+
+%%% Miscellaneous
+\usepackage[toc]{multitoc}
+
+%%% Colors & Links
+\usepackage{color,xcolor}
+\usepackage[%
+linktocpage,
+colorlinks=true,
+linkcolor=lred,
+urlcolor=lred,
+]{hyperref}
+
+
+%%% Definitions
+%%% Definitions of new colors
+\definecolor{lred}{RGB}{205,92,92}
+\definecolor{rred}{RGB}{254,58,36}
+\definecolor{dred}{RGB}{216,25,30}
+\definecolor{dorange}{RGB}{239,87,37}
+%%% Modification of dispositions
+\addtokomafont{disposition}{\color{lred}}
+
+%%% Modification of lists
+%%% Itemize
+\renewcommand{\labelitemi}{\textcolor{lred}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{lred}{\textbullet}}
+\renewcommand{\labelitemiii}{\textcolor{lred}{\textbullet}}
+\renewcommand{\labelitemiv}{\textcolor{lred}{\textbullet}}
+%%% Enumerate
+\renewcommand{\labelenumi}{\textcolor{lred}{\bfseries\sffamily\Roman{enumi}.}}
+\renewcommand{\labelenumii}{\textcolor{lred}{\bfseries\sffamily\Alph{enumii}.}}
+\renewcommand{\labelenumiii}{\textcolor{lred}{\bfseries\sffamily\roman{enumiii}.}}
+\renewcommand{\labelenumiv}{\textcolor{lred}{\bfseries\sffamily\alph{enumiv}.}}
+
+%%% Main
+\begin{document}
+%%% Titles
+\title{Besprechungsprotokoll -- PPG 4/2010}
+\author{Protokollschreiber: Dominic Stühler\thanks{\url{dominic.stuehler@physik.stud.uni-erlangen.de}}}
+\date{29. Juli 2010, 12 Uhr}
+\maketitle
+
+Im Folgenden soll an Stelle des Wortes \emph{Projektpraktikum}, die Abkürzung \emph{PP} verwandt werden.
+
+%%% Lists
+\tableofcontents
+
+%%% Main
+\section{Anwesendheit}
+In alphabetischer Reihenfolge des Vornamens:\\[0.5\baselineskip]
+Dominic Stühler, Johannes Müller, Maximilian Ammon, Mona Dentler, Thomas Kittler, Sahradha Albert\\
+Krankheitsbedingt abwesend: Torben Tietz\\
+\emph{Tutor:} Florian Bayer
+
+\section{Zielsetzung des Projektpraktikums}
+Es sollen 
+\begin{itemize}
+	\item zwei 4 Wochen Projekte,
+	\item zwei 2 Wochen Projekte, sowie
+	\item eine Abschlusspräsentation (ca. 10 min) über ein durchgeführtes Projekt (Zielgruppe: Professoren und Teilnehmer des \emph{PP})
+\end{itemize}
+erbracht werden (letzte Deadline: \textit{Mitte März}).\par
+Die insgesamt vier Projekte sollen möglichst aus verschiedenen Teilbereichen der Physik entstammen.\par
+Es ist weiterhin zu erwähnen, dass alle Projekte vorab mit dem \emph{Tutor} durchgesprochen werden müssen, um den zu erwartenden Aufwand einzuschätzen und die Durchführbarkeit zu gewährleisten. In diesem Zusammenhang sei auch zu erwähnen, dass von den wöchentlichen Sitzungen ein Gesprächsprotokoll angefertigt wird, dass dem \emph{Tutor} vorgelegt wird, sowie jeweils die erste Version des Praktikumsprotokolls, bevor dieses von der Praktikumsleitung abgesegnet wird.\par 
+
+\subsection{Projektfindung}
+Als erstes Projekt sei es ratsam ein einfaches Messprojekt durchzuführen. Dabei kann beispielsweise eine bekannte Naturkonstante nachgemessen werden.
+
+\section{Rahmen des Projektpraktikums}
+
+\subsection{Räumlichkeiten}
+Es steht der Projektgruppe ein eigener Abschnitt innerhalb der Räumlichkeiten des \emph{PP} zur Verfügung. Welcher dies jedoch genau ist steht zum jetzigen Zeitpunkt noch nicht fest.
+
+\subsection{Finanzen}
+Bei Anschaffungen von einem Budget bis zu 10 € kann dies ohne Rücksprache mit dem Sekretariat verrechnet werden. Sollte eine Anschaffung ein größeres Budget erfordern, so ist mit dem \emph{Tutor}, sowie der Praktikumsleitung Rücksprache zu halten.\par
+Werden Materialien aus der Werkstatt benötigt oder verwandt, so erfolgt dies über eine interne Abrechnung und muss nicht über die oben genannte Regel erfolgen.
+
+\subsection{Werkstätten}
+Es können die hauseigenen Werkstätten, entsprechende \textbf{Vorausplanung} vorausgesetzt, in Anspruch genommen werden. Das bedeutet, dass notwendige Anfertigungen für die Durchführung eines Projekts, dort in Auftrag gegeben werden können. 
+
+\subsection{IT-Infrastruktur}
+Um die Durchführung zu koordinieren, sowie einen reibungslosen Ablauf zu gewährleisten, steht \emph{noch} zur Diskussion, sich einer gewissen Infrastruktur zu bedienen, dabei seien folgende Schlagbegriffe genannt:
+
+\begin{itemize}
+	\item \emph{\LaTeX}, zur Anfertigung der Gesprächs--, sowie Praktikumsprotokolle,
+	\item \emph{Versionsverwaltung}, bspw. \emph{Git}, zur Koordination, als auch als Backupmöglichkeit,
+	\item \emph{Website}, Gestaltung dieser, aus Gründen der Repräsentation
+	\item \emph{Grafik--, Plotprogramme}, bspw. \emph{Inkscape} oder \emph{gnuplot (gesprochen: \enquote{newplot}!\footnote{\url{http://bit.ly/23eRjk}})} um ansprechende Grafiken für die Protokolle zu erstellen.
+\end{itemize}
+Dies stellt natürlich nur ein erstes Brainstorming dar und darf/soll zukünftig erweitert und etabliert werden.
+
+\section{Wichtige Termine}
+\begin{itemize}
+	\item Einführung in das \emph{PP}, Laserschutzbelehrung, \emph{Freitag, den 15. Oktober, 15 Uhr}
+	\item Projektfindung PPG 4, \emph{Freitag, den 15. Oktober, mittags}
+\end{itemize}
+
+\end{document}
+

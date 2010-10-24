@@ -1,0 +1,96 @@
+%%%
+%%% File: protokoll_29.7.tex
+%%% Author: Dominic Stuehler <dominic.stuehler@gmx.net>
+%%% Created: So 10.Okt 19:54:38 CEST 2010
+%%% Copyright: Dominic Stuehler, 2010
+%%%
+%%% Description: Simple template in latex for protocols.
+%%%
+%%% NOTE: This document may be changed/modified and (re)distributed.
+%%%	  If you do so, please name always the author of the first
+%%%	  version of this document.
+%%%
+
+\documentclass[%
+fontsize=12pt,
+paper=a4,
+DIV=calc,
+%twoside,
+%titlepage,
+%headings=normal,
+]{scrartcl}
+
+%%% Usepackages
+%%% German language support
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage[babel,german=guillemets]{csquotes}
+
+%%% Fonts & Symbols
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage[scaled=0.95]{helvet}
+\linespread{1.05}
+\KOMAoptions{DIV=last}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\DeclareUnicodeCharacter{20AC}{\EUR}
+\usepackage{blindtext}
+
+%%% Tables & Graphics
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+
+%%% Miscellaneous
+\usepackage[toc]{multitoc}
+
+%%% Colors & Links
+\usepackage{color,xcolor}
+\usepackage[%
+linktocpage,
+colorlinks=true,
+linkcolor=lred,
+urlcolor=lred,
+]{hyperref}
+
+
+%%% Definitions
+%%% Definitions of new colors
+\definecolor{lred}{RGB}{205,92,92}
+\definecolor{rred}{RGB}{254,58,36}
+\definecolor{dred}{RGB}{216,25,30}
+\definecolor{dorange}{RGB}{239,87,37}
+%%% Modification of dispositions
+\addtokomafont{disposition}{\color{lred}}
+
+%%% Modification of lists
+%%% Itemize
+\renewcommand{\labelitemi}{\textcolor{lred}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{lred}{\textbullet}}
+\renewcommand{\labelitemiii}{\textcolor{lred}{\textbullet}}
+\renewcommand{\labelitemiv}{\textcolor{lred}{\textbullet}}
+%%% Enumerate
+\renewcommand{\labelenumi}{\textcolor{lred}{\bfseries\sffamily\Roman{enumi}.}}
+\renewcommand{\labelenumii}{\textcolor{lred}{\bfseries\sffamily\Alph{enumii}.}}
+\renewcommand{\labelenumiii}{\textcolor{lred}{\bfseries\sffamily\roman{enumiii}.}}
+\renewcommand{\labelenumiv}{\textcolor{lred}{\bfseries\sffamily\alph{enumiv}.}}
+
+%%% Main
+\begin{document}
+%%% Titles
+\title{Besprechungsprotokoll -- PPG 4/2010}
+\author{Protokollschreiber: Vorname Nachname\thanks{\url{vorname.nachname@studienfach.stud.uni-erlangen.de}}}
+\date{Datum, Uhrzeit}
+\maketitle
+
+Im Folgenden soll an Stelle des Wortes \emph{Projektpraktikum}, die Abkürzung \emph{PP} verwandt werden.
+
+%%% Lists
+%\tableofcontents % Wahlweise einfügen, gerade bei längeren Meetings
+
+%%% Main
+Hier kommt der eigentliche Text \ldots
+\end{document}
+
