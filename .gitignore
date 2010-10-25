@@ -1,7 +1,8 @@
 *.aux
 *.log
-*.backup
-*~
-*swp
+*.swp
 *.out
 *.toc
+*.bbl
+*.backup
+*~
